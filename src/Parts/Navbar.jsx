@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa6";
 import "../css/navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-
+import navlogo from "../images/navlogo.jpg";
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [collapsed, setCollapsed] = useState(true);
@@ -35,7 +35,7 @@ const Navbar = () => {
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-white">
           <a className="navbar-brand order-1" href="/">
-            <img src="../images/navlogo.jpg" alt="" width={100} />
+            <img src={navlogo} alt="" width={100} />
           </a>
 
           <div
