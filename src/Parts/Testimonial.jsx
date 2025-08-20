@@ -6,6 +6,11 @@ import "../css/testimonial.css";
 import { FaQuoteRight } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
+// ✅ Import images from src
+import test3jpeg from "../images/test3jpeg.jpeg";
+import test1 from "../images/test1.png";
+import test from "../images/test.jpeg";
+
 const Testimonial = () => {
   const { t } = useTranslation();
 
@@ -16,7 +21,7 @@ const Testimonial = () => {
       message: t(
         "As a parent, I was constantly worried about my child's speech development. This app provided me with an easy-to-use tool to assess my child's communication skills. The detailed classification and helpful resources have been a game-changer for our family. We now have a clear understanding of our child's needs and how to support their development."
       ),
-      imgSrc: "./src/images/test3jpeg.jpeg", // Adjust this path as per your image location
+      imgSrc: test3jpeg, // ✅ use imported image
     },
     {
       id: 2,
@@ -24,7 +29,7 @@ const Testimonial = () => {
       message: t(
         "As a speech therapist, I highly recommend this website to parents and caregivers. The questionnaire is thorough yet straightforward, and the classification results are incredibly accurate. It's a fantastic resource for early detection of speech and language disorders, allowing for timely intervention. The app has truly made a difference in the lives of many children I work with."
       ),
-      imgSrc: "./src/images/test1.png", // Adjust this path as per your image location
+      imgSrc: test1, // ✅ use imported image
     },
     {
       id: 3,
@@ -32,7 +37,7 @@ const Testimonial = () => {
       message: t(
         "This application has been a valuable tool for our family. The survey was simple to complete, and the results were insightful. The classifications helped us understand where our child stands and what steps to take next. The additional resources and tips provided are a wonderful bonus. I appreciate how the app empowers parents with knowledge and support."
       ),
-      imgSrc: "./src/images/test.jpeg", // Adjust this path as per your image location
+      imgSrc: test, // ✅ use imported image
     },
   ];
 
