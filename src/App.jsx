@@ -21,6 +21,7 @@ const router = createBrowserRouter([
   { path: "/test", element: <Test /> },
   { path: "/test/Questions", element: <Questions /> },
 ]);
+import "./i18n";
 function App() {
   return (
     <div className="App">
